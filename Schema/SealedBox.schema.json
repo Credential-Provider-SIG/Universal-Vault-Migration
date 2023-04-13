@@ -12,17 +12,23 @@
         "encryptedVault": {
             "type": "string",
             "format": "base64",
-            "description": "Encrypted Vault using with shared key between vault receiver and provider."
+            "description": "Encrypted Vault using with shared key between vault receiver and provider. In the format of `encryptedData || authenticationTag`"
         },
         "keyDerivationSalt": {
             "type": "string",
             "format": "base64",
             "description": "Salt used for symmetric key derivation."
+        },
+        "encryptionNonce": {
+            "type": "string",
+            "format": "base64",
+            "description": "Nonce used in the encryption of the vault"
         }
     },
     "required": [
         "publicKey",
         "encryptedVault",
-        "keyDerivationSalt"
+        "keyDerivationSalt",
+        "encryptionNonce"
     ]
 }
