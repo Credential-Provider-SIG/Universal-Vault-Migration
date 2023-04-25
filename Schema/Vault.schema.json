@@ -35,7 +35,7 @@
                     "type": "string",
                     "description": "Unique identifier for a user account, specified by the Relying Party during registration"
                 },
-                "userDiplayName": {
+                "userDisplayName": {
                     "type": "string",
                     "description": "Human-palatable name for the user account, intended only for display, provided by the Relying Party"
                 },
@@ -58,7 +58,7 @@
                 "relyingPartyId",
                 "relyingPartyName",
                 "userHandle",
-                "userDiplayName",
+                "userDisplayName",
                 "counter",
                 "keyAlgorithm",
                 "privateKey"
