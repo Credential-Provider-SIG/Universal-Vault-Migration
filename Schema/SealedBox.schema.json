@@ -28,6 +28,10 @@
             "type": "string",
             "format": "base64",
             "description": "The authentication tag of the `encryptedVault`"
+        },
+        "sessionIdentifier": {
+            "type": "string",
+            "description": "Non-secret session identifier to help receiving applications match incoming SealedBoxes with the corresponding private key that was shared in the OpenBox."
         }
     },
     "required": [

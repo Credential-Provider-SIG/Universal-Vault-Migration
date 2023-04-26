@@ -8,6 +8,10 @@
             "type": "string",
             "format": "base64",
             "description": "Public Key of the Vault receiver used to share the vault content symmetric key with the vault source."
+        },
+        "sessionIdentifier": {
+            "type": "string",
+            "description": "Non-secret session identifier to help receiving applications match incoming SealedBoxes with the corresponding private key. Originating apps should include this in their SealedBox."
         }
     },
     "required": [
